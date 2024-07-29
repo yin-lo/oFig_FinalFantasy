@@ -1,0 +1,227 @@
+body {
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 15px auto;
+}
+
+/* header */
+
+.header {
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1; 
+ 
+}
+
+.header__title-container {
+  background-color: #c80000;
+  padding: 15px;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.header__title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.header__subtitle {
+  margin-left: 10px;
+}
+
+.header__theme-container {
+  background-color: #666;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.header__theme-title-franchise {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* Cart */
+
+.cart-section {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin: 10px 0;
+}
+
+.cart-section__title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.cart-products {
+  text-align: center;
+  width: 94%;
+  margin: 0 auto;
+  box-shadow: 1px 2px 4px rgb(0 0 0 / 10%)
+}
+
+.cart-products__head-line {
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-products__head-item {
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 6px;
+}
+
+/* https://developer.mozilla.org/fr/docs/Web/CSS/:nth-child */
+.cart-products__body-line:nth-child(odd) {
+  background-color: #eee;
+}
+
+/* En mode Beau Gosse, on fais une suite numérique :), possibilité infini */
+/* .cart-products__body-line:nth-child(2n + 1) {
+  background-color: #eee;
+} */
+
+.cart-products__body-item {
+  padding: 6px;
+}
+
+.cart-products__qty {
+  width: 30px;
+}
+
+.cart-products__remove-product {
+  color: #c80000;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  margin-left: 2px;
+}
+
+.cart-products__foot-item {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.cart-products__foot-item--price {
+  color: #c80000;
+  font-size: 1.8rem;
+}
+
+.cart-delivery {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3%;
+}
+
+.cart-delivery__part-title {
+  color: #666;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.cart-total {
+  margin: 20px 3% 10px 3%;
+  padding: 30px;
+  box-shadow: 1px 2px 4px rgb(0 0 0 / 10%);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-total__label {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.cart-total__price {
+  font-weight: bold;
+  color: #c80000;
+  font-size: 1.8rem;
+}
+
+.cart-actions {
+  margin: 20px 3% 10px 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Form */
+
+.button {
+  border: none;
+  padding: 15px 30px;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: #666;
+  color: white;
+}
+
+.button--red {
+  background-color: #c80000;
+  color: #fff;
+}
+
+.button--red:hover {
+  background-color: #8e0000;
+}
+
+/* FORM */
+
+.form__label-input {
+  display: block;
+  margin-top: 3px;
+  padding-bottom: 3px;
+  font-size: 0.8rem;
+}
+
+.form__radio-label, .form__checkbox-label {
+  line-height: 1.5;
+  font-size: 0.8rem;
+}
+
+.form__input, .form__textarea {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #eee;
+  width: 100%;
+  line-height: 2;
+}
+
+/* Footer */
+
+.footer {
+  background: #666 url('../images/deco.png') repeat-x;
+  color: #fff;
+  background-color: #666;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.fixed-sales {
+  position: fixed;
+  left: 0;
+  top: calc(50% - 124px / 2);
+  background-color: #c80000;
+  color: #fff;
+  padding: 10px 5px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  letter-spacing: -0.1rem;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
