@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="E.Leport" />
+		<meta name="description" content="oFig - figurines et statuettes" />
+
+		<title>oFig | Final Fantasy</title>
+		<link rel="icon" type="image/x-icon" href="../S01E04-challenge-oFig-yin-lo/images/pngegg.png" />
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header class="header__top">
+			<p class="header__top-description"><strong class="header__top-logo">oFig </strong> Figurines et statuettes</p>
+			<h1 class="title">Votre panier <em>2 produits</em></h1>
+		</header>
+
+
+		<main class="box">
+			<form action="/" method="post" class="form">
+				<h2 class="livraison__title">Préférences de livraison</h2>
+
+				<section class="livraison">
+					<section class="livraison__preference">
+						<fieldset>
+							<legend class="livraison__subtitle">Où souhaitez-vous être livré ?</legend>
+
+							<div>
+								<input type="radio" id="addCurent" name="livraison" value="Mon adresse courante" />
+								<label for="addCurent">Mon adresse courante</label>
+							</div>
+
+							<div>
+								<input type="radio" id="addOther" name="livraison" value="Autre adresse" checked />
+								<label for="addOther">Autre adresse</label>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend class="livraison__subtitle">Options</legend>
+							<div>
+								<input type="checkbox" id="bySMS" name="bySMS" checked />
+								<label for="bySMS">Suivi de livraison par sms (inclus)</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="satisfied" name="satisfied" />
+								<label for="satisfied">Satisfait ou remboursé (+ 2 euros)</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="garantie" name="garantie" />
+								<label for="garantie">Garantie 2 ans (+ 10 euros)</label>
+							</div>
+						</fieldset>
+					</section>
+
+					<section class="livraison__address">
+						<fieldset>
+							<legend class="livraison__subtitle">Adresse</legend>
+
+							<label for="street">Rue </label>
+							<input type="text" placeholder="9 boulevard F. Fantasy" id="street" name="street" pattern="[a-zA-Z0-9.]{4,30}" />
+
+							<label for="postcode">Code postal </label>
+							<input type="text" placeholder="69 696" id="postcode" name="postcode" pattern="[0-9]{5}" />
+
+							<label for="city">Ville </label>
+							<input type="text" placeholder="Sky" id="city" name="city" pattern="[a-zA-Z]{2,30}" />
+						</fieldset>
+
+						<fieldset>
+							<legend class="livraison__subtitle">Informations complémentaires</legend>
+
+							<label for="complement">interphone, bâtiment, etc.</label>
+							<textarea name="complement" id="complement" cols="30" rows="10"></textarea>
+						</fieldset>
+					</section>
+				</section>
+
+				<section class="price">
+					<p class="price__text">Montant total à régler&nbsp;:</p>
+					<p class="price__number">197 €</p>
+				</section>
+
+				<section class="buttons">
+					<button class="buttons__desactive" type="button">Continuer vos achats</button>
+					<button class="buttons__active" type="submit">Valider et payer</button>
+				</section>
+			</form>
+
+			<aside class="ticket__sold">
+				<a href="#">soldes</a>
+			</aside>
+		</main>
+
+		<footer>
+			<p>oFig - toutes les images sont sous copyright &copy; SquareEnix</p>
+		</footer>
+	</body>
+</html>
